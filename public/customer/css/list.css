@@ -1,0 +1,61 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+.shake {
+    animation: shaker 2.5s infinite;
+}
+
+@keyframes shaker {
+    from {
+        transform: scale(1);
+    }
+    from {
+        transform: scale(1.08);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.badge {
+    z-index: 3;
+}
+
+.pizza-img{
+    transform: scale(.9);
+    transition: 800;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card:hover .pizza-img {
+    transform: scale(1.01);
+}
+
+.img-container{
+    height: 220px;
+}
+
+.img-detail{
+    height: 70vh;
+}
+
+@media screen and (max-width:600px) {
+    .img-container{
+        height: 400px;
+    }
+
+    .pizza-img {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .img-detail{
+        height: 70vh;
+    }
+}
+
+
